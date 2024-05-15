@@ -1,0 +1,59 @@
+<html>
+
+<head>
+  <title>OKLRP | Statute Lookup</title>
+
+  <script type="text/javascript" src="js/statute.js"></script>
+  <link rel="stylesheet" href="style/style.css">
+
+</head>
+
+<body>
+<button onclick="myFunction()">Toggle dark mode</button>
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+	<div id="header">
+    <b style="font-size: 25px">For Your Statute Needs!</a></b>
+     <br>
+    <i></i>
+  </div>
+
+  <div id="phoneticContainer">
+    <div class="spacer"></div>
+    <div id="phoneticform">
+      <form name='statuteForm' action=''>
+        <div class="formheader">
+          <div class="spacer"></div>
+          <div class="forminfo">
+            Statute Lookup
+            <div style="font-size: 16px;">Type the general message below.</div>
+          </div>
+          <div class="spacer"></div>
+        </div>
+        <div class="inputtext">
+          <input id="inputtextbox" type='text' name='statuteText' value='' placeholder="Example &quot;Speed&quot;" autocomplete="off" onblur='javascript:statuteLookup()' onKeyUp='javascript:statuteLookup()' onkeydown="return (event.keyCode!=13)">
+        </div>
+        <div class="outputtext">
+          <div id="statuteoutput"></div>
+        </div>
+		
+		
+		<div id="header">
+		    <i></i>
+    <b style="font-size: 15px">Created by Sasha Alexander | OKLRP</a></b>
+     <br>
+    <b style="font-size: 15px">DM Me on discord (agentteddyy) for any questions or concerns.</a></b>
+  </div>
+      </form>
+
+    </div>
+    <div class="spacer"></div>
+  </div>
+</body>
+
+</html>
